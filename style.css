@@ -1,0 +1,15 @@
+.card {
+    margin: 100px;
+}
+
+.card-header{
+    text-align: center;
+    background-image: linear-gradient(black,black);
+    font-family: 'Bree Serif', serif;
+    color: white;
+    font-size: 30px;
+}
+
+.daysAhead{
+    display:inline-block;
+}

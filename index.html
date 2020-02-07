@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
+        <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+</head>
+
+<body>
+    <!--Establish the Header for the page (This can either be placed with a Jumbotron or the entire page can be wrapped in a card-->
+    <div class="card">
+        <div class="card-header">
+          Weather Dashboard
+        </div>
+        <div class="card-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                       <nav class="navbar navbar-light bg-light">
+                        <form class="form-inline">
+                                <h3>Search for a City:</h3>
+                              <input class="form-control mr-sm-2" id="searchVal" type="search" aria-label="Search">
+                              <button class="btn btn-primary my-2 my-sm-0" id="searchBtn" type="button"><i class="fas fa-search"></i></button>
+                        </form>
+                              <div class="recent-searches">
+                                <h4 id="rec1"></h4>
+                                <h4 id="rec2"></h4>
+                                <h4 id="rec3"></h4>
+                                <h4 id="rec4"></h4 >
+                                <h4 id="rec5"></h4>
+
+                              </div>
+                    
+                          </nav>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="current-selection">
+                            <h3 class="current-city">Current Weather:</h3>
+                            <p class="temp">Temperature:</p>
+                            <p class="humidity">Humidity:</p>
+                            <p class="wind">Wind:</p>
+                            <p class="UV">UV Index:</p>
+                        </div>
+                        <h3>5-Day Forecast:</h3>
+                        <div class="5day">
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    <!--A column floating left must be established for the search section and previous searches-->
+
+    <!--A column to the right can be established for the current selected city weather, and underneath for the 5 day forecast-->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
